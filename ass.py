@@ -7,12 +7,12 @@ print(digits)
 def firststbit():
     global num
     global str_num
-    count = 0
+    count = 1
     for i in digits:
-        if i & 1 == 1:
-            count = count + 1
-        else:
-            digits.remove(i)
-    return count
+        if i & 1 == 0:
+            count += 1
+        elif i & 1 == 1:
+            print(count)
+            break
 
-print(firststbit())
+firststbit()
