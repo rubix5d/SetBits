@@ -20,4 +20,3 @@ and3 = (or1 & and2)
 q = (and3 | and1)
 
 print("Value for q is", bin(q))
-
