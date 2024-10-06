@@ -1,7 +1,7 @@
 
-def powerof4(number):
-
-    if (number & (~(number & (number - 1)))):
+def powerof8(number):
+    count = 0
+    if (number & (~(number & (~number & (number - 1))))):
       while(number > 1):
         number >>= 1
         count += 1
@@ -11,5 +11,5 @@ def powerof4(number):
       else:
          return False
       
-number = int()
+print(powerof8(64))
 
